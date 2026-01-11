@@ -1,0 +1,27 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": ["error", 2],
+        "quotes": ["error", "single"], 
+        "semi": ["error", "always"], 
+        "no-unused-vars": "off", 
+        "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }], // advertencia para vars no usadas
+        "@typescript-eslint/explicit-function-return-type": "off"
+  }
+}

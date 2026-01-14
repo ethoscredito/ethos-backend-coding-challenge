@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ESNext",
+      "allowSyntheticDefaultImports":true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "moduleResolution": "Node", 
+      "strict": true,
+      "skipLibCheck": true
+    },
+    "ts-node": {
+      "esm": true,
+      "experimentalSpecifierResolution": "node"
+    },
+    "include": ["src/**/*", "jest.config.ts"]
+  }
